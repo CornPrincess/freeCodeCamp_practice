@@ -2,8 +2,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
+header, footer {
     display: flex;
+    flex-direction: row;
 }
 
 header .profile-thumbnail {
@@ -15,6 +16,7 @@ header .profile-thumbnail {
 header .profile-name {
     display: flex;
     margin-left: 10px;
+    flex-direction: column;
 }
 
 header .follow-btn {
@@ -44,9 +46,6 @@ header h3, header h4 {
     opacity: 0.1;
 }
 
-footer {
-    display: flex;
-}
 footer .stats {
     display: flex;
     font-size: 15px;
