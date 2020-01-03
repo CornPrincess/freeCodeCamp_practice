@@ -17,10 +17,12 @@ header .profile-name {
     display: flex;
     margin-left: 10px;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 header .follow-btn {
     display: flex;
+    align-items: center;
     margin: 0 0 0 auto;
 }
 
