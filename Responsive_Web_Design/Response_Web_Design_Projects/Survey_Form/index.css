@@ -4,6 +4,8 @@
 :root {
     --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
     --color-white: #f3f3f3;
+    --color-green: #37af65;
+    --color-pink: #8443D3
 }
 
 /*box-sizing 设置width和height时包括padding和border，默认width只设置content的值*/
@@ -19,6 +21,7 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-white);
+    background-color: var(--color-pink);
     margin: 0;
 }
 
@@ -125,5 +128,39 @@ form {
     height: 2.375rem;
     padding: 0.375rem 0.75rem;
     color: #495057;
-    /*background-color: #fff;*/
+    background-color: #fff;
+    background-clip: border-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin: 0.625rem;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
 }
